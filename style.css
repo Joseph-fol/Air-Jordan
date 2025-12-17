@@ -23,7 +23,7 @@ nav{
     height: 100vh;
     /* z-index: 4; */
     width: 45vw;
-    background: linear-gradient(180deg, #02cbfc, #0077b6);
+    /* background: linear-gradient(180deg, #02cbfc, #0077b6); */
 }
 
 nav ul{
@@ -49,8 +49,12 @@ nav ul li a{
 
 /* Hero Section */
 #hero{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     height: 100vh;
-    overflow: hidden;
+    padding: 0 12%;
+    /* background: linear-gradient(90deg, #ffffff, #0077b6); */
 }
 
 .hero::after {
