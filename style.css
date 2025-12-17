@@ -107,7 +107,16 @@ nav ul li a{
     width: 900px;
 }
 
+.best-shop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 60px 0px;
+}
+
 /* Section1 */
+
 
 #section1 h1{
     text-align: center;
