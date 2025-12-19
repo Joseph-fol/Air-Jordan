@@ -11,27 +11,52 @@
 <body>
 
 <header>
-        <div class="overlay"></div>
-    <nav>
-        <img src="./JORDAN RETRO/logo1.svg" alt="" width="50px" height="100px">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">New Arrivals</a></li>
-                <li><a href="#">Offers</a></li>
-                <li><a href="#">Reviews</a></li>
-            </ul>
-            <button class="btn btn-dark fw-bold">Switch</button>
+    <div class="overlay"></div>
+    
+    <!-- Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" style="backdrop-filter: blur(50px);">
+        <div class="container-fluid px-3 px-md-5">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="./JORDAN RETRO/logo1.svg" alt="Jordan Logo" width="50" height="100">
+            </a>
+            
+            <!-- Toggle Button for Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Navbar Content -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-3">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#">New Arrivals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#">Offers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#">Reviews</a>
+                    </li>
+                </ul>
+                
+                <!-- Switch Button -->
+                <button class="btn btn-dark fw-bold">Switch</button>
+            </div>
+        </div>
     </nav>
     
     <!-- Hero section -->
     <section class="hero" id="hero">
-    
         <div class="hero-content">
-            <h1 class="display-4 fw-bold" id="hero-head"> Air <br> Jordan <br><span style="color: #0077b6;"> 3 Retro</span></h1>
+            <h1 class="fw-bold" id="hero-head"> Air <br> Jordan <br><span style="color: #0077b6;"> 3 Retro</span></h1>
             <p class="lead" id="lead">Nike's first Air Jordan  Retro returns with a vibrant color gradient that's sure to turn heads.</p>
 
             <div id="hero-buttons">
-                <a href="#" class="btn btn-dark ps-4 pe-4 rounded-0 bg-dark">Shop Shoe</a>
+                <a href="#" class="btn btn-dark ps-4 pe-4 me-3 rounded-0 bg-dark">Shop Shoe</a>
 
                 <a href="#" class="btn btn-danger ps-4 pe-4 rounded-0 bg-light text-danger">View Details</a>
             </div>
@@ -49,12 +74,15 @@
         <div id="cardsection">
 
         <div class="card rounded-3" style="width: 20rem;">
-            <img src="./JORDAN RETRO/imgi_2_jordan-1.png" class="card-img-top" id="card-image">
+            <div class="">
+                <img src="./JORDAN RETRO/imgi_2_jordan-1.png" class="card-img-top" id="card-image">
+            </div>
             
             <div class="card-body" id="card-bd">
                 <h4>Jordan 4 Retro SE</h4>
                 <p>$120.20</p>
-                <a href="#" class="btn btn-dark ps-4 pe-4 rounded-0 bg-light text-dark">Add to Cart</a>            </div>
+                <a href="#" class="btn btn-dark ps-4 pe-4 rounded-0 bg-light text-dark">Add to Cart</a>            
+            </div>
         </div>
 
         <div class="card" style="width: 20rem;">
@@ -112,12 +140,14 @@
     <!-- Section -->
      
     <section class="best-shop">
-        <div class="hero-content" style="padding: 0px;">
+        <div class="best-shop-card1" style="padding: 0px;">
             <img src="./JORDAN RETRO/jubilation.svg" alt="">
-            <h1 class="display-4 fw-bold" id="hero-head" style="font-size: 50px; line-height: 70px;"> Best Shop for <br><span style="color: #0077b6;"> Best People </span></h1>
-            <p class="lead" id="lead">Start a shopping adventure that transforms your expectations with <br> unbeatable bargains. Whether you're seeking premium choices or <br> astonishing discounts, we provide unmatched value that distinguishes us <br> from the rest.</p>
 
-            <div id="hero-buttons">
+            <h1 class="display-4 fw-bold" style="font-size: 50px; line-height: 70px;"> Best Shop for <br><span style="color: #0077b6;"> Best People </span></h1>
+
+            <p class="lead" id="lead">Start a shopping adventure that transforms your expectations with  unbeatable bargains. Whether you're seeking premium choices or astonishing discounts, we provide unmatched value that distinguishes us from the rest.</p>
+
+            <div id="best-shop-button">
                 <a href="#" class="btn btn-dark ps-4 pe-4 rounded-0 bg-dark">Shop Shoe</a>
 
             </div>
@@ -126,12 +156,15 @@
         <div>
             <img src="./JORDAN RETRO/imgi_8_offers-img.webp" alt="Hero Image" class="img-fluid" width="500px">
         </div>
+
     </section>
     <hr>
 
     <section>
-        <h1 style="color: #0077b6; text-align: center; font-size: 60px; padding: 20px 400px; font-weight:bold; margin-top: 60px;">Client <span class="text-dark"> Reviews </span></h1>
-        <p style="text-align: center; font-size: 25px;">Listen to authentic tales from our delighted <br> customers recounting their extraordinary <br> encounters with us.</p>
+        <div class="client-review">
+            <h1>Client <span class="text-dark"> Reviews </span></h1>
+            <p>Listen to authentic tales from our delighted customers recounting their extraordinary encounters with us.</p>
+        </div>
 
         <div id="review-section">
             <div id="review-content">
@@ -142,18 +175,60 @@
 
             <div id="review-content">
                 <img src="./JORDAN RETRO/ronaldo.jpg" alt="" style="border-radius: 100%; width: 100px; height: 100px; display: block; margin-left: auto; margin-right: auto;">
-                <h2> Sultan  (4.4)</h2>
+                <h2> Cristiano  (4.4)</h2>
                 <p>The sneakers are fire and exactly what I was looking for. I'll definitely be coming back!</p>
             </div>
 
             <div id="review-content">
                 <img src="./JORDAN RETRO/elon-musk.jpg" alt="" style="border-radius: 100%; width: 100px; height: 100px; display: block; margin-left: auto; margin-right: auto; margin-bottom: 20px;">
-                <h2> Sultan  (4.4)</h2>
+                <h2> Elon Musk  (4.4)</h2>
                 <p>Fireeeeeee. I love the kicks, there are great! I will wear them to mars!</p>
             </div>
 
         </div>
     </section>
+<hr>
+    <!-- Footer Section -->
+     <footer>
+        <div class="footer">
+            <div class="footer-text1">
+                <img src="./JORDAN RETRO/logo1.svg" alt="" width="80px">
+                <p>Elevate your style with the latest Jordan Retro collection as you gear up for the new term at your closest Nike store. Explore the perfect jordan retro fit in-store.</p>
+            </div>
+
+            <div class="footer-content">
+                <h4>Jordan Retro</h4>
+                <ul class="jordan-nav">
+                    <li><a href="#">Jordan Retro</a></li>
+                    <li><a href="#">Jordan Retro 1</a></li>
+                    <li><a href="#">Jordan Retro 7</a></li>
+                    <li><a href="#">Retro Boom</a></li>
+                    <li><a href="#">Jordan Retro G</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-content">
+                <h4>Help</h2>
+                <ul class="jordan-nav">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">How to Shop </a></li>
+                    <li><a href="#">Returns Policy</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-content" style="width: 30%; padding-left: 50px;">
+                <h4>Contact Us</h4>
+                <ul class="jordan-nav">
+                    <p>Email: <a href="mailto:customer@jordan.com" style="text-decoration: none; color: black;"> customer@jordan.com</a></p>
+                    <p>Phone: <a href="tel:+2347039127504" style="text-decoration: none; color: black;">+2347039127504</a></p>                    
+                </ul>
+            </div>
+            
+        </div>
+
+     </footer>
 
 
 
